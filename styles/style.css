@@ -4,29 +4,26 @@
   box-sizing: border-box;
 }
 
-body, html {
-  font-family: 'Lato', sans-serif;
+body,
+html {
+  font-family: "Lato", sans-serif;
   color: #222;
 }
 
 .rectangle {
   height: 80px;
-  display: block;
   background-color: #f5f5f5;
-  padding-top: auto;
+  padding: 0 5%;
   color: #222;
 }
 
 .rectangle__h2 {
-  margin-left: 350px;
-  padding-top: 30px;
-  line-height: 25px;
+  padding-top: 26px;
   font-size: 25px;
 }
 
 .instructions {
-  padding-left: 20px;
-  margin-left: 332px;
+  padding: 0 5%;
 }
 
 .note {
@@ -37,58 +34,37 @@ body, html {
 .delivery-option-one {
   margin-top: 45px;
 }
+.delivery-option-one p{
+  padding-top: 10px;
+}
+
 
 .option-one-content {
   margin-top: 30px;
-  width: 1244px;
-  height: 256px;
 }
+.option-one-content p{
+  padding:20px;
 
+}
+strong{
+  font-size: 20px;
+}
 .inside-content {
-  width: 1155px;
-  height: 253px;
   background-color: #fff;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.step-one {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  flex-flow: column;
-  justify-content: flex-start;
-  width: 335px;
-  height: 253px;
-  margin-left: 30px;
-  padding-top: 20px;
-  float: left;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: 50px;
 }
 
-.step-two {
+.steps-first {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   flex-flow: column;
   align-items: center;
-  width: 335px;
-  height: 253px;
-  float: left;
+  width: 25%;
   padding-top: 20px;
-  margin-left: 50px;
-}
-
-.step-three {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  flex-flow: column;
-  align-items: center;
-  width: 335px;
-  height: 253px;
-  padding-top: 20px;
-  margin-right: 30px;
-  float: right;
 }
 
 .centered {
@@ -97,104 +73,82 @@ body, html {
 
 .option-two-content {
   margin-top: 30px;
-  width: 1244px;
-  height: 256px;
+  width: 100%;
 }
 
 .inside-content-two {
-  width: 1244px;
-  height: 253px;
   background-color: #fff;
-  margin-left: auto;
-  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
 }
 
-.step-one-two {
+.steps-second {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   flex-flow: column;
-  width: 577.5px;
-  height: 253px;
-  float: left;
-
+  width: 48%;
 }
 
-.step-two-two {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  flex-flow: column;
-  width: auto;
-  height: 253px;
-
-}
 .btn {
-
-  width:250px;
-  margin-bottom: -650px;
-  margin-left: 950px;
+  float: right;
+  width: 250px;
+  margin-top: 30px;
   padding: 10px;
   font-size: 22px;
   border: 2px solid transparent;
   background-color: #c82059;
   color: #fff;
-
   border-radius: 0;
 }
 
 .btn:hover {
-    cursor: pointer;
-    background-color: #fff;
-    color: #c82059;
-    border-color: #c82059;
-}
-.footer{
-  margin-top:400px;
-  margin-left: auto;
-  margin-right: auto;
-}
-.footer-area{
-    background-color: #f5f5f5;
-}
-.footer-area--text{
-  font-size: 12px;
-  margin-left: auto;
-  margin-right: auto;
-  width:1244px;
-  padding: 10px;
-  height: auto;
-}
-/*
-.btn {
-    width: 100%;
-    margin: 0 auto;
-    padding: 10px;
-    font-size: 18px;
-    border: 2px solid transparent;
-    background-color: #222;
-    color: #fff;
-    transition: all 0.3s;
+  cursor: pointer;
+  background-color: #fff;
+  color: #c82059;
+  border-color: #c82059;
 }
 
-.btn:hover {
-    cursor: pointer;
-    background-color: #fff;
-    color: #222;
-    border-color: #222;
+.footer {
+  margin-top: 200px;
 }
-*/
+
+.footer-area {
+  background-color: #f5f5f5;
+}
+
+.footer-area--text {
+  font-size: 12px;
+  padding: 1% 5%;
+}
+
+
 
 /* MEDIA */
 
-@media screen and (min-width: 480px) {
-  .rectangle {}
+@media screen and (max-width: 480px) {
+p{
+  text-align: center;
+}
+.rectangle__h2 {
+  text-align: center;
+  font-size: 20px;
+}
 }
 
-@media screen and (min-width: 767px) {}
+@media screen and (max-width: 767px) {
+  .rectangle__h2 {
+    text-align: center;
 
-@media screen and (min-width: 940px) {}
+  }
+}
+
+@media screen and (max-width: 940px) {
+  .rectangle__h2 {
+    text-align: center;
+
+  }
+}
 
 @media screen and (min-width: 1200px) {}
-
-*/
